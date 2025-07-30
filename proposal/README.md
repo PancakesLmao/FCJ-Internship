@@ -28,7 +28,7 @@ The platform employs a serverless AWS architecture to manage data from 5 Raspber
 - **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
 - **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
 - **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for 5 users.
+- **Amazon Cognito**: Secures access for lab users.
 
 ### Component Design
 - **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
@@ -41,7 +41,7 @@ The platform employs a serverless AWS architecture to manage data from 5 Raspber
 ### 4. Technical Implementation
 **Implementation Phases**
 This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship). Use the diagram in Appendix C as a guide.
+- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
 - Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
 - Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
 - Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
